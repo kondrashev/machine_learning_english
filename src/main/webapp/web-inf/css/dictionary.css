@@ -1,0 +1,206 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-display: swap;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #A4B6C8;
+    display: grid;
+    grid-template-columns: 1050px;
+    grid-template-rows: 20px;
+}
+
+.umenu {
+    display: none;
+    background-color: #8CD30F;
+    position: absolute;
+    top: 100%;
+}
+
+.hmenu li:hover ul {
+    display: block;
+    border-radius: 30px;
+}
+
+.hmenu,
+.umenu {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.hmenu {
+    grid-column: 1;
+    grid-row: 2;
+    width: 1000px;
+    height: 50px;
+    margin-top: -5px;
+    padding-left: 40px;
+}
+
+.hmenu li {
+    float: left;
+    position: relative;
+    height: 100%;
+    width: 160px;
+    padding-top: 5px;
+    border: 3px #ffffff solid;
+    border-radius: 30px;
+    box-shadow: 0 0 10px black;
+}
+
+.hmenu li a {
+    display: block;
+    padding: 6px;
+    color: #ffffff;
+    font-size: 22px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.umenu li {
+    float: none;
+    height: 65px;
+}
+
+.hmenu li:hover {
+    background-color: #8CD30F;
+    border-radius: 30px;
+    opacity: 0.8;
+}
+
+.hmenu li:nth-child(6) {
+    background-color: initial;
+    border-radius: initial;
+    border: initial;
+    box-shadow: initial;
+}
+
+.hmenu li:nth-child(6) a {
+    color: transparent;
+}
+
+.umenu li:hover {
+    background-color: #666;
+    border-radius: 30px;
+}
+
+.dv-1 {
+    grid-column: 2;
+    grid-row: 2;
+    padding-top: 3px;
+}
+
+.dv-1 input {
+    height: 30px;
+    font-size: 16px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+
+.dv-1 input:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.dv-1 button {
+    height: 28px;
+    font-size: 16px;
+    margin-left: 8px;
+    border-radius: 8px;
+}
+
+.dv-1 button:hover {
+    color: #ffffff;
+    background-color: red;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 30px;
+    grid-template-rows: 20px;
+    background-image: linear-gradient(-110deg, green, #94BC99);
+}
+
+header .tb-1,
+section .tb-2 {
+    grid-column: 2;
+    grid-row: 2;
+    width: 800px;
+}
+
+header .tb-1 th,
+section .tb-2 th {
+    background-color: aquamarine;
+    color: #3D6D59;
+    font-size: 22px;
+}
+
+header .tb-1 td,
+section .tb-2 td {
+    font-size: 20px;
+}
+
+header .tb-1 th,
+header .tb-1 td,
+section .tb-2 th,
+section .tb-2 td {
+    text-align: center;
+    height: 40px;
+}
+
+header .tb-1 .td-1 {
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+}
+
+header .tb-1 .td-1:hover {
+    background-color: #666;
+}
+
+section .fm-2 .btn-1{
+margin-top: 30px;
+}
+
+section .tb-2 th,
+section .tb-2 td {
+    border: 2px solid #ffffff;
+}
+
+section .tb-2 td:hover {
+    border: 3px solid #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 0 15px black;
+}
+
+section .tb-2 {
+    margin-left: 10px;
+    margin-top: -12px;
+}
+
+footer {
+    width: 100%;
+    height: 65px;
+    background-color: #A4B6C8;
+    padding-top: 18px;
+    padding-left: 120px;
+}
+
+footer .btn-2 {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+footer .btn-2:hover {
+    border-radius: 45%;
+    box-shadow: 0 0 15px black;
+}

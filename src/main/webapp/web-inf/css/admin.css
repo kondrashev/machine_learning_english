@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-display: swap;
+    background-color: #4CB1CA;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: 50px 100px;
+    grid-template-rows: 20px 50px auto auto auto auto;
+}
+
+.statistics h {
+    margin-left: 460px;
+    width: 350px;
+    height: 30px;
+    font-size: 25px;
+    color: #ffffff;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.statistics .tb-1 {
+    grid-column: 2;
+    grid-row: 3;
+    width: 1200px;
+}
+
+.statistics .tb-1 th,
+.statistics .tb-2 th {
+    background-color: aquamarine;
+    color: #3D6D59;
+    font-size: 22px;
+}
+
+.statistics .tb-1 td,
+.statistics .tb-2 td {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.statistics .tb-1 td:hover,
+.statistics .tb-2 td:hover {
+    background-color: #67A35F;
+}
+
+.statistics .tb-1 th,
+.statistics .tb-1 td,
+.statistics .tb-2 th,
+.statistics .tb-2 td {
+    text-align: center;
+    height: 30px;
+    border: 2px solid #ffffff;
+    border-collapse: collapse;
+}
+
+.statistics a {
+    color: #ffffff;
+    font-size: 25px;
+    grid-column: 2;
+    grid-row: 4;
+    padding-top: 20px;
+}
+
+.statistics a:hover {
+    color: red;
+}
+
+.statistics .delete_user {
+    color: gray;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    margin-top: 20px;
+    grid-column: 2;
+    grid-row: 5;
+}
+
+.statistics .delete_user:hover,
+.statistics .delete_content:hover {
+    color: #ffffff;
+    background-color: red;
+}
+
+.statistics .tb-2 {
+    margin-top: 20px;
+    grid-column: 2;
+    grid-row: 6;
+    width: 800px;
+}
+
+.statistics .delete_content {
+    margin-top: 10px;
+    color: gray;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    grid-column: 2;
+    grid-row: 7;
+}
+
+.statistics .tb-2 th input {
+    font-size: 16px;
+    width: 220px;
+    height: 25px;
+    border-radius: 15px;
+    padding-left: 10px;
+}
+
+.statistics .tb-2 th input:hover {
+    box-shadow: 0 0 10px black;
+}
+
+.statistics .tb-2 th button {
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+}
+
+.statistics .tb-2 th button:hover {
+    box-shadow: 0 0 10px black;
+}
